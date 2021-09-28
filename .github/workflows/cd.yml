@@ -15,5 +15,4 @@ jobs:
       - name: Build and publish image
         uses: docker/build-push-action@v2
         with:
-          registry: ghcr.io
-          username: jisantuc
+          push: true
