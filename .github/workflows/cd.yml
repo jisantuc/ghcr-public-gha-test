@@ -17,6 +17,5 @@ jobs:
         with:
           push: true
           tags: |
-            type=sha
             type=ref,event=pr
             type=semver,pattern={{major}}.{{minor}}
