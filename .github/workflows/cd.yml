@@ -1,0 +1,19 @@
+name: cd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publishContainers:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build and publish image
+        uses: docker/build-push-action@v2
+        with:
+          registry: ghcr.io
+          username: jisantuc
