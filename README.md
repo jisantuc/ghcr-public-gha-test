@@ -17,3 +17,7 @@ It generates a bunch of image tags for:
 So after a few pushes, a PR, and a tag, your [packages page](https://github.com/jisantuc/ghcr-public-gha-test/pkgs/container/ghcr-public-gha-test) will look about like this:
 
 ![](images/packages.png)
+
+To run this action, you'll just need to
+[create a personal access token with the appropriate permissions](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-to-the-container-registry)
+and [create a repo secret called `GHCR_PAT`](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
